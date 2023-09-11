@@ -14,8 +14,8 @@ function saveEmp() {
         department: Department,
     };
     if (ID == "") {
+        clearData();
         var xhr = new XMLHttpRequest();
-
         xhr.open(
             "POST",
             "https://employee-app-622d9-default-rtdb.firebaseio.com/Employee.json",
@@ -130,8 +130,6 @@ function deleteEmp(id) {
         xhr.send();
     }
 }
-
-
 function deleteAll() {
     var xhr = new XMLHttpRequest();
     xhr.open(
@@ -172,6 +170,7 @@ function deleteAll() {
         }
     };
     xhr.send();
+    
 }
 
 function getEmpById() {
