@@ -18,7 +18,7 @@ function saveEmp() {
         var xhr = new XMLHttpRequest();
         xhr.open(
             "POST",
-            "https://employee-app-622d9-default-rtdb.firebaseio.com/Employee.json",
+            "https://employee-app-622d9-default-rtdb.firebaseio.com/",
             true
         );
         xhr.setRequestHeader("Content-Type", "application/json");
